@@ -1,0 +1,27 @@
+button{
+    width: 100px;
+    margin-top: 1rem;
+}
+li{
+    list-style: square;
+}
+.main{
+    display: flex;
+}
+.container{
+    max-height: 12rem;
+    overflow: auto;
+    width: 1000rem;
+    text-align: center;
+}
+.sidebar{
+    text-align: left;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10rem;
+    max-height: 10rem;
+    text-align: bottom;
+}
