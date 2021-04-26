@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import logo from './logo.png';
+import './FTime.css';
 function FTime(){
     let Time = new Date().toLocaleTimeString();
     const [ctime, setCtime ] = useState(Time);
@@ -9,9 +11,14 @@ function FTime(){
     setInterval(UpdateTime, 1000);
     return (
         <>
-        <h1>
-           Current Time : {ctime}
-        </h1>
+        <div className='FTime'>
+            <div className='header'>
+                 <img src={logo} className="App=logo" alt="Logo"/>
+                
+                <h2>
+                    Current Time : {ctime}
+                    
+                </h2></div></div>
         
     </>);
 }
